@@ -45,26 +45,6 @@ body {
     width: 1170px;
   }
 }
-/* @media (min-width: 768px) {
-  .container {
-    width: 98%;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    width: 99.5%;
-  }
-} */
 
 /* header */
 header {
@@ -171,7 +151,6 @@ header {
 .menu_icon {
   display: inline;
 }
-
 .close_icon {
   display: none;
 }
@@ -179,15 +158,12 @@ header {
 .toggle_checkbox:checked ~ .toggle_btn .menu_icon {
   display: none;
 }
-
 .toggle_checkbox:checked ~ .toggle_btn .close_icon {
   display: inline;
 }
-
 .dropdown_menu p {
   padding-top: 0.3rem;
 }
-
 .header_solar .container {
   display: flex;
   align-items: left;
@@ -195,7 +171,8 @@ header {
   height: 100vh;
   flex-direction: column;
   gap: 1.8rem;
-  margin-top: -4rem !important;
+  /* margin-top: -3rem !important; */
+  margin-top: -1rem !important;
 }
 
 .border {
@@ -267,7 +244,12 @@ header {
   background: linear-gradient(0deg, #ffbb1c 0%, #ffbb1c 100%);
 }
 
-/* responsive */
+                                    /* responsive */
+@media(max-width:1200px) {
+  .header_solar .container {
+    margin-top: 1rem !important;
+  }
+}
 @media (max-width: 992px) {
   .navbar .nav_left ul,
   .navbar .call_us {
@@ -298,6 +280,9 @@ header {
     font-size: 16px;
     width: 100%;
   }
+  .header_solar .container {
+    margin-top: -2rem !important;
+  }   
 }
 
 @media (max-width: 500px) {
@@ -541,7 +526,6 @@ header {
   text-align: center;
 }
 .repairs .container {
-    /* height: 311px; */
     padding: 3rem 0px;
     background: rgba(0, 0, 0, 0.57);
     border-radius: 12px;
@@ -659,7 +643,8 @@ header {
   margin-top: 1.5rem;
 }
                              /* responsive */
-@media (max-width:992px) {
+/* @media (max-width:992px) { */
+@media (max-width:1200px) {
   .energy .container {
     align-items: center;
     gap: 1.7rem;
@@ -888,6 +873,7 @@ footer {
   background: #283646;
   width: 100vw;
   overflow-x: hidden;
+  margin-top: 4rem;
 }
 footer .container {
   margin-top: 4rem;
@@ -975,8 +961,13 @@ footer img {
     margin-bottom: 2rem;
   }
   .terms {
-    flex-wrap: wrap;
     gap: 1rem;
+  }
+}
+@media(max-width:768px) {
+  .terms {
+    flex-direction: column;
+    align-items: start;
   }
 }
 @media(max-width:550px) {
@@ -985,10 +976,13 @@ footer img {
   }
 }
 
-
-
-
-
-
-
-
+@media(max-width:1200px) and (min-width:992px) {
+  .our_values .parent_card .card {
+    width: 370px;
+    height: 460px;
+  }
+  .installers .featured_item {
+    bottom: 60px;
+    left: -30px;
+  }
+}
