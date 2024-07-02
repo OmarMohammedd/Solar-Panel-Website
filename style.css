@@ -886,8 +886,6 @@ header {
                                         /* footer */
 footer {
   background: #283646;
-  width: 100vw;
-  overflow-x: hidden;
 }
 footer .container {
   margin-top: 4rem;
@@ -948,6 +946,16 @@ footer img {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.26px;
+  flex-wrap: wrap;
+}
+.terms div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.terms div span {
+  margin: 0 0.6rem;
 }
  
                                  /* responsive */
