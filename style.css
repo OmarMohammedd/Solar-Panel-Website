@@ -886,6 +886,8 @@ header {
                                         /* footer */
 footer {
   background: #283646;
+  width: 100vw;
+  overflow-x: hidden;
 }
 footer .container {
   margin-top: 4rem;
