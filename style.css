@@ -650,6 +650,9 @@ header {
     gap: 1.7rem;
     flex-direction: column;
   }
+  .energy_right .card {
+    width: fit-content;
+  }
 }
 @media (max-width:800px) {
   .energy_right {
