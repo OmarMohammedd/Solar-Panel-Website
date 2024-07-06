@@ -664,6 +664,9 @@ header {
 .energy_left p {
   font-size: 16px;
 }
+.energy_right .card {
+  width: 100% !important;
+}
 }
                              /* our_values */
 .our_values {
@@ -987,9 +990,9 @@ footer img {
   }
 }
                                  /* Animation */
-/* .card {
+.card {
   transition: transform 0.3s ease-in-out;
 }
 .card:hover {
   transform: translateY(-10px);
-} */
+}
