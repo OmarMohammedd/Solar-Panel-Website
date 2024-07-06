@@ -650,9 +650,6 @@ header {
     gap: 1.7rem;
     flex-direction: column;
   }
-  .energy_right .card {
-    width: fit-content;
-  }
 }
 @media (max-width:800px) {
   .energy_right {
@@ -990,9 +987,9 @@ footer img {
   }
 }
                                  /* Animation */
-.card {
+/* .card {
   transition: transform 0.3s ease-in-out;
 }
 .card:hover {
   transform: translateY(-10px);
-}
+} */
